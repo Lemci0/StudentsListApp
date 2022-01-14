@@ -17,6 +17,15 @@ public class Student {
     private String lastName;
     private String email;
     private String degreeCourse;
+    private String type;
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
 
     public int getId() {
         return id;
@@ -64,5 +73,18 @@ public class Student {
 
     public void setDegreeCourse(String degreeCourse) {
         this.degreeCourse = degreeCourse;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", indexNumber=" + indexNumber +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", degreeCourse='" + degreeCourse + '\'' +
+                ", type='" + type + '\'' +
+                '}';
     }
 }

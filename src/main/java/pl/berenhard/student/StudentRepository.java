@@ -1,4 +1,8 @@
 package pl.berenhard.student;
 
-public interface StudentRepository {
+import org.springframework.data.repository.CrudRepository;
+
+public interface StudentRepository extends CrudRepository<Student, Integer> {
+
+
 }

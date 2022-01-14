@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 @SpringBootApplication
 @Component
-@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+//@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 
 public class StudentsListAppApplication {
 

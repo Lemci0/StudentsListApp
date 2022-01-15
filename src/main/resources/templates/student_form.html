@@ -48,11 +48,15 @@
             </div>
             <div class="text-center">
                 <button type="submit" class="btn btn-primary m-2">Dodaj</button>
-                <button type="button" class="btn btn-secondary m-2">Anuluj</button>
+                <button type="button" class="btn btn-secondary m-2" onclick="cancelForm()">Anuluj</button>
             </div>
-            
         </div>
     </form>
 </div>
+<script type="text/javascript">
+    function cancelForm() {
+        window.location = "[[@{/students}]]"
+    }
+</script>
 </body>
 </html>

@@ -19,4 +19,11 @@ public class StudentController {
 
         return "students";
     }
+
+    @GetMapping("/students/new")
+    public String showNewForm(Model model) {
+        model.addAttribute("student", new Student());
+        return "student_form";
+    }
+
 }

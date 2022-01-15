@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
 
 @SpringBootApplication
 @Component
-//@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 
+//ldsubjeshazines
 public class StudentsListAppApplication {
 
     public static void main(String[] args) {

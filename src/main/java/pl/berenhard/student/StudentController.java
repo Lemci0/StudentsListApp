@@ -42,10 +42,21 @@ public class StudentController {
             Student student = service.get(id);
             model.addAttribute("student", student);
             model.addAttribute("pageTitle", "Edytuj studenta");
+
             return "student_form";
         } catch (StudentNotFoundException e) {
             return "redirect:/students";
         }
+    }
+
+    @GetMapping("/students/delete/{id}")
+    public String deleteStudent(@PathVariable("id") Integer id) {
+        try {
+            service.delete(id);
+        } catch (StudentNotFoundException e) {
+            return "redirect:/students";
+        }
+        return "redirect:/students";
     }
 
 }

@@ -27,4 +27,12 @@ public class StudentService {
         }
         throw new StudentNotFoundException("Nie znaleziono studenta");
     }
+
+    public void delete(Integer id) throws StudentNotFoundException {
+        Long count = repo.countById(id);
+        if (count == null || count == 0) {
+            throw new StudentNotFoundException("Nie znaleziono studenta");
+        }
+        repo.deleteById(id);
+    }
 }

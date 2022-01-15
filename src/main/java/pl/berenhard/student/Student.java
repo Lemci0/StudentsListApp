@@ -19,13 +19,6 @@ public class Student {
     private String degreeCourse;
     private String type;
 
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
 
     public int getId() {
         return id;
@@ -75,6 +68,14 @@ public class Student {
         this.degreeCourse = degreeCourse;
     }
 
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
@@ -87,4 +88,5 @@ public class Student {
                 ", type='" + type + '\'' +
                 '}';
     }
+
 }
